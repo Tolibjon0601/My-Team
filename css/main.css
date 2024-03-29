@@ -1,1 +1,257 @@
-/*# sourceMappingURL=main.css.map */
+/* livvic-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/livvic-v14-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/livvic-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/livvic-v14-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/livvic-v14-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/livvic-v14-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Livvic";
+  background-color: #004047;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1158px;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.main__header {
+  padding-top: 48px;
+}
+
+.header__logo {
+  width: 128px;
+}
+
+.header__menu {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../img/menu__svg.svg");
+  background-color: transparent;
+  border: none;
+}
+
+.header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__btn {
+  display: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  color: #fff;
+  padding: 9px 33px 11px 32px;
+  border: 2px solid #fff;
+  border-radius: 24px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.header__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  color: #fff;
+}
+
+.header__nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+  .header__btn {
+    display: inline-block;
+  }
+  .header__nav {
+    display: inline-block;
+  }
+}
+.header__logo__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 80px;
+}
+
+.hero {
+  padding-top: 80px;
+  padding-bottom: 197px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/hero__img.svg");
+  background-position: center bottom;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #fff;
+  margin-bottom: 18px;
+  width: 240px;
+}
+.hero__text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 187%;
+  color: #fff;
+  max-width: 457px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+span {
+  color: #f67e7e;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 64px;
+    line-height: 87%;
+    width: 400px;
+    margin-bottom: 24px;
+  }
+  .hero__text {
+    font-size: 15px;
+    line-height: 187%;
+  }
+}
+.line {
+  display: none;
+  margin-bottom: 79px;
+  width: 50px;
+  height: 4px;
+  background-color: #79c8c7;
+}
+
+@media screen and (min-width: 1100px) {
+  .hero {
+    background-image: url("../img/hero__img.svg"), url("../img/hero__img_1.svg");
+    background-position: 90% bottom, left 30%;
+  }
+  .hero__block {
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .hero__title {
+    margin: 0;
+    font-size: 100px;
+    line-height: 100%;
+    width: 539px;
+  }
+  .hero__text {
+    font-size: 18px;
+    line-height: 156%;
+  }
+  .line {
+    display: inline-block;
+  }
+}/*# sourceMappingURL=main.css.map */
