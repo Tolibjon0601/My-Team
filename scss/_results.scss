@@ -1,0 +1,49 @@
+.results{
+  background-color: #004047;
+padding-top: 140px;
+padding-bottom: 164px;
+background-repeat: no-repeat;
+background-image: url(../img/results_bgr__img.svg);
+background-position: left top;
+}
+.results__title{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  color: #fff;
+  max-width: 327px;
+}
+.active{
+  color: #79c8c7;}
+  .results__text{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 167%;
+    color: #fff;
+    &::before{
+      background-repeat: no-repeat;
+
+    }
+  }
+  .results__text__name{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    color: #79c8c7;
+  }
+  .results__text__name__job{
+
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 138%;
+    color: #fff;
+  }
+  .results__item{
+    padding-top: 48px;
+    text-align: center;
+
+
+
+  }
