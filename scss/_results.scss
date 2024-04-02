@@ -3,16 +3,18 @@
 padding-top: 140px;
 padding-bottom: 164px;
 background-repeat: no-repeat;
-background-image: url(../img/results_bgr__img.svg);
-background-position: left top;
+background-image: url(../img/results_bgr__img.svg),url('../img/results__background__img.svg');
+background-position: left top,right bottom;
+
 }
 .results__title{
+
   font-weight: 700;
   font-size: 32px;
   line-height: 100%;
   text-align: center;
   color: #fff;
-  max-width: 327px;
+  margin-bottom: 48px;
 }
 .active{
   color: #79c8c7;}
@@ -21,16 +23,19 @@ background-position: left top;
     font-size: 15px;
     line-height: 167%;
     color: #fff;
+    margin-bottom: 16px;
     &::before{
       background-repeat: no-repeat;
 
     }
+
   }
   .results__text__name{
     font-weight: 700;
     font-size: 18px;
     line-height: 156%;
     color: #79c8c7;
+    margin-bottom: 2px;
   }
   .results__text__name__job{
 
@@ -39,11 +44,72 @@ background-position: left top;
     font-size: 13px;
     line-height: 138%;
     color: #fff;
+    margin-bottom: 16px;
   }
   .results__item{
-    padding-top: 48px;
+    padding-top: 40px;
     text-align: center;
+    &:not(:last-child){
+      margin-bottom: 48px;
+    }
+    background-repeat: no-repeat;
+    background-image: url(../img/results__icon.svg);
+    background-position: center top ;
 
+  }
+.item__1::after{
+  content:"";
+  width: 62px;
+  height: 62px;
+  background-repeat: no-repeat;
+  background-image: url('../img/results__profile__1.svg');
+  display: inline-block;
+  &::after{
+    flex-shrink: 0;
+  }
+}
+.item__2::after{
+  content:"";
+  width: 62px;
+  height: 62px;
+  background-repeat: no-repeat;
+  background-image: url('../img/results__profile__2.svg');
+  display: inline-block;
+  &::after{
+    flex-shrink: 0;
+  }
+}
+.item__3::after{
+  content:"";
+  width: 62px;
+  height: 62px;
+  background-repeat: no-repeat;
+  background-image: url('../img/results__profile__3.svg');
+  display: inline-block;
+  &::after{
+    flex-shrink: 0;
+  }
+}
+@media screen and (min-width:768px){
 
+    .results__title{
+max-width: 460px;
+margin-left: auto;
+margin-right: auto;
+    }
+
+  }
+  @media screen and (min-width:1100px) {
+    .results__list{
+      display: flex;
+      gap: 30px;
+    }
+    .results__title{
+      font-size: 48px;
+      line-height: 100%;
+      max-width: 932px;
+margin-left: auto;
+margin-right: auto;
+    }
 
   }
